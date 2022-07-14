@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("/static/fonts/cera-pro.woff2") format("woff2");
+  font-weight: 500;
+}
+
+html {
+  scroll-padding-top: 75px; /* height of sticky header */
+}
+
+.circular-wrapper__core-ellipse {
+  background: url("/static/images/core-ellipse-2.png") 100%;
+  width: min(75vw, 550px);
+  aspect-ratio: 1;
+  box-shadow: -30px 30px 30px rgba(53, 106, 240, 0.15);
+  font-size: min(7.5vw, 42px);
+  line-height: 40%;
+}
+
+.circular-wrapper__item {
+  background: url("/static/images/small-ellipse.png") center;
+  width: 100px;
+  aspect-ratio: 1;
+  margin-left: 1px;
+  margin-top: -20px;
+  box-shadow: -15px 15px 30px rgba(53, 106, 240, 0.2);
+}
+
+.circular-wrapper__item--active {
+  margin-top: -10px;
+  box-shadow: inset -5px 11px 11px #ffffff, inset 33px 66px 60px #eaf4ff,
+    -15px 15px 30px rgba(53, 106, 240, 0.3);
+}
+
+input[type="checkbox"]::after {
+  background-image: url("/static/icons/check-mark.svg");
+}
+
+.custom-shadow-1 {
+  box-shadow: 0px 111.167px 88.9337px rgba(229, 229, 245, 0.2),
+    0px 72.0528px 52.0839px rgba(229, 229, 245, 0.15),
+    0px 42.82px 28.327px rgba(229, 229, 245, 0.1),
+    0px 22.2334px 14.4517px rgba(229, 229, 245, 0.1),
+    0px 9.05807px 7.24645px rgba(229, 229, 245, 0.07),
+    0px 2.05865px 3.49971px rgba(229, 229, 245, 0.05);
+}
+
+.border-gradient {
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(to right, #53d258, transparent) border-box;
+  border-radius: 0.5rem;
+  border: 0.15rem solid transparent;
+}
+
+.selected-network {
+  @apply border-blue-400 border-2;
+}
+
+/* @media (max-width: 1160px) and (min-width: 640px) { */
+.codebox {
+  min-height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .documentation__main {
+    /* box-shadow: -10px 0 10px -5px rgba(0, 0, 0, 0.05); */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 5px 8px 0px;
+  }
+}
+
+.scrollspy-item {
+  position: relative;
+}
+.scrollspy-item::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 0;
+  width: 2px;
+  transition: height 0.4s;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.scrollspy-item:hover::before {
+  height: 100%;
+}
+.scrollspy-item.scrollspy-item--active::before {
+  height: 100%;
+}
+
+.shadow-custom-1 {
+  --tw-shadow: 2px 2px 8px 0px rgb(0 0 0 / 0.07),
+    0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+    0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-custom-2 {
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}

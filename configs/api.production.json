@@ -1,0 +1,4 @@
+{
+  "BaseUrl": "https://api.oraclez.io",
+  "SocketUrl": "wss://api.oraclez.io"
+}

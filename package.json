@@ -1,0 +1,60 @@
+{
+  "name": "oraclez",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next build && next export"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "dependencies": {
+    "@coinbase/wallet-sdk": "^3.0.8",
+    "@ethersproject/experimental": "5.6.0",
+    "@ethersproject/units": "5.6.0",
+    "@headlessui/react": "^1.6.4",
+    "@walletconnect/ethereum-provider": "^1.7.7",
+    "@web3-react/coinbase-wallet": "8.0.26-beta.0",
+    "@web3-react/core": "8.0.23-beta.0",
+    "@web3-react/eip1193": "8.0.18-beta.0",
+    "@web3-react/empty": "8.0.12-beta.0",
+    "@web3-react/metamask": "8.0.19-beta.0",
+    "@web3-react/network": "8.0.18-beta.0",
+    "@web3-react/types": "8.0.12-beta.0",
+    "@web3-react/url": "8.0.17-beta.0",
+    "@web3-react/walletconnect": "8.0.26-beta.0",
+    "axios": "^0.27.2",
+    "classnames": "^2.3.1",
+    "file-saver": "^2.0.5",
+    "formik": "^2.2.9",
+    "next": "12.1.6",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "react-syntax-highlighter": "^15.5.0",
+    "react-toastify": "^9.0.5",
+    "reactstrap": "^9.1.1",
+    "socket.io-client": "^4.5.1",
+    "typewriter-effect": "^2.18.2",
+    "web3": "^1.7.3",
+    "web3-utils": "^1.7.3"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.41",
+    "@types/react": "18.0.12",
+    "@types/react-dom": "18.0.5",
+    "@types/react-syntax-highlighter": "^15.5.2",
+    "autoprefixer": "^10.4.7",
+    "eslint": "8.17.0",
+    "eslint-config-next": "12.1.6",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.0",
+    "typescript": "4.7.3"
+  }
+}

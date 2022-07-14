@@ -1,0 +1,56 @@
+.right__col {
+  background-color: #295197;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.left__col {
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.custom__card {
+  border-radius: 2rem;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.custom__btn {
+  border-radius: 1rem;
+  background-color: #295197;
+  color: snow;
+  border: 2px solid rgba(40, 38, 38, 0.634);
+  padding: 0.5rem;
+  margin: 0.5rem 0.5rem;
+  transition: all 0.3s ease;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+}
+
+.custom__btn:hover {
+  color: black !important;
+  background-color: snow;
+  cursor: pointer;
+}
+
+.active__btn {
+  background-color: snow;
+  color: black;
+  border: 2px solid rgba(40, 38, 38, 0.634);
+  padding: 0.5rem;
+  margin: 0.5rem 0.5rem;
+  transition: all 0.3s ease;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+  border-radius: 1rem;
+}
+
+.active__btn:hover {
+  color: black !important;
+  background-color: snow;
+  cursor: pointer;
+}
